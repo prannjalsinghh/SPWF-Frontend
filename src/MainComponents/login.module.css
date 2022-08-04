@@ -1,0 +1,21 @@
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    gap:2rem;
+    
+}
+form input{
+    border: 2px black;
+    width: 50%;
+    border-radius: 15px;
+}
+.error{
+    border:solid 2px rgb(241, 0, 0);
+
+}
+form button{
+    width:25%;
+    border-radius: 15px;
+}

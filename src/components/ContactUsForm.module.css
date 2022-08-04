@@ -1,0 +1,57 @@
+.ContactUsForm{
+    width:100%;  
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    margin-top: 70px;
+    padding: 10% 5%;
+    border-radius: 10px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/shiksharth.jpg');
+    background-size: cover;
+}
+.error{
+    border:solid 2px red;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row1 input{
+    width: 45%;
+    padding: 2.5% 5%;
+    background-color: rgba(255,255,255,.85);
+    border: none;
+    border-radius: 20px;
+
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row2 input{
+    padding: 2.5% 5%;
+    border: none;
+    border-radius: 20px;
+    width: 45%;
+    background-color: rgba(255,255,255,.85);
+
+}
+textarea{
+    border-radius: 20px;
+    padding: 5% 0 0 20px;
+    background-color: rgba(255,255,255,.85);
+}
+
+
+@media screen and (max-width: 850px) {
+    .ContactUsForm{
+        margin-top: 0px;
+    }
+    .ContactUsForm button{
+        width: 40%;
+        padding: 2%;
+        font-size: 150%;
+    }
+}

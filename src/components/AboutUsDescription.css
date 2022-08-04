@@ -1,0 +1,37 @@
+.AboutUsDescription{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* text-align: center; */
+    gap:3%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.AboutUsDescription div{
+    width: 45%;
+
+}
+.AboutUsDescription h1{
+    width: 30%;
+    font-family: 'Playfair Display', serif;
+    font-size: 300%;
+    font-weight: 550;
+}
+
+@media screen and (max-width: 800px){
+    .AboutUsDescription{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .AboutUsDescription div{
+        width: 80%;
+    }
+    .AboutUsDescription h1{
+        width: 80%;
+        font-size: 200%;
+    }
+}

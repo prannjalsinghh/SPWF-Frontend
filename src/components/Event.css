@@ -1,0 +1,36 @@
+.Event{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+@media screen and (max-width: 1000px) {
+    .shikleft {
+        width: 50%;
+    }
+    .eventDetails{
+        width: 120%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .Event{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .shikleft {
+        width: 95%;
+    }
+    .shikleft img{
+        object-fit:cover;
+    }
+    .shikright{
+        width: 90%;
+    }
+    .eventDetails{
+        width: 100%;
+    }
+    .eventJoin button{
+        margin: 0%;
+    }
+}

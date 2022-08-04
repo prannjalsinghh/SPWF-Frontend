@@ -1,0 +1,85 @@
+.ContactUsBox{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px;
+    max-width: 1500px;
+    margin: auto;
+}
+#orange{
+    color: orange;
+}
+.ContactUsBoxLeft{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 0 3%;
+    font-family: 'Playfair Display', serif;
+}
+.ContactUsBoxLeft h1{
+    font-size: 350%;
+    font-weight: 800;
+}
+.ContactUsBoxRight{
+    width: 40%;
+}
+.contactAdress{
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid 1px orange;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.contactAdress i{
+    width: 70px;
+    font-size: 250%;
+    padding: 2% 0;
+    background-color: orange;
+    color: white;
+    border-radius: 100px;
+    text-align: center;
+}
+.desc{
+    width: 80%;
+    padding: 1% 2%;
+}
+.desc h4{
+    font-weight: 800;
+
+}
+
+@media screen and (max-width: 850px) {
+    .ContactUsBox{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .ContactUsBoxLeft{
+        width: 90%;
+    }
+    .ContactUsBoxLeft h1{
+        font-size: 200%;
+    }
+    .contactAdress{
+        gap: 5%;
+        max-width: 560px;
+        width: 100%;
+        align-self: center;
+    }
+    .contactAdress i{
+        width: 70px;
+        font-size: 220%;
+    }
+    .desc{  
+        padding: 0%;
+    }
+    .ContactUsBoxRight{
+        width: 80%;
+    }
+    .ContactUsForm{
+        margin-top: 0px;
+    }
+}

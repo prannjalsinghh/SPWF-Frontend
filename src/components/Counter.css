@@ -1,0 +1,160 @@
+.counterBanner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 8%;
+    max-width: 1500px;
+    margin: auto;
+    margin-bottom: 70px;
+}
+.bannerLeft{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    align-items: center;
+}
+.counter{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    background-color: #ffa026;
+    color: white;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.countercolomn{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.countercolomn h1{
+    margin: 10% 0 0 0;
+    color: white;
+}
+.bannerLeft img{
+    width: 85%;
+    border-radius: 10px;
+}
+.bannerRight{
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    font-size: 130%;
+}
+.bannerRight h5{
+    margin: 0;
+    text-transform: uppercase;
+    color: #ffa026;
+}
+.yearExperience{
+    width: 20%;
+    height: 100%;
+}
+.counterExp{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.counterExp div{
+    background-color: #ffa026;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    padding:0;
+}
+.counterExp h2{
+    color:white;
+    margin: 0;
+    padding: 0;
+
+    
+}
+
+.bannerRight h1{
+    margin: 0 0 5% 0;
+    font-family: 'Times New Roman', serif;
+    /* text-transform: uppercase; */
+
+}
+.counterDesc{
+    font-size: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    list-style: none;
+  }
+  
+ul li:before {
+    content: '✓  ';
+    color: #ffa026;
+    font-weight: bolder;
+}
+.bannerRight button{
+    background-color: #ffa026;
+    color: white;
+    border: solid 2px #ffa026;
+    border-radius: 25px;
+    width: 35%;
+    font-size: 120%;
+    margin-top: 2%;
+    padding: 0.6rem 0;
+    transition: 0.3s;
+}
+.bannerRight button:hover{
+    background-color: #e18c1c;
+    border: solid 2px #e18c1c;
+}
+
+@media screen and (max-width: 1100px) {
+    .counterBanner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bannerLeft{
+        width: 70%;
+
+    }
+    .bannerRight{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .counterBanner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .bannerLeft{
+        width: 90%;
+    }
+    .bannerLeft img{
+        width: 100%;
+    }
+    .counter{
+        width: 105%;
+    }
+    .bannerRight{
+        max-width: 100%;
+    }
+    .bannerRight h5{
+        margin-bottom: 10px;
+    }
+    .counterExp div{
+        padding: 3px;
+    }
+    .yearExperience{
+        width: 50%;
+        height: 100%;
+    }
+    .counterExp{
+        flex-direction: column-reverse;
+    }
+
+}

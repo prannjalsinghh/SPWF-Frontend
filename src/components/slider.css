@@ -1,0 +1,22 @@
+.mypics{
+    height: 550px;
+    z-index: -999;
+    object-fit: cover;
+    color: white;
+}
+.let{
+    font-size: 300%;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    background-color: rgba(255, 167, 3, 0.449);
+    border-radius: 10px;
+}
+@media screen and (max-width: 800px){
+    .mypics{
+        height: 400px;
+        object-fit: cover;
+    }
+    .let{
+        font-size: 110%;
+    }
+}

@@ -1,0 +1,368 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    width: 100%;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 5%;
+    flex-direction: row;
+    font-size: 90%;
+    padding: 0 1rem;
+    justify-content: space-around;
+    background-color: white /*#d8d6d6 /*rgba(244, 182, 66, 0.841);*/;
+    color: black;  /* tobechanged */
+    border-bottom: solid 1px white;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.1rem;
+}
+header a{
+    /* color: white; */
+    text-decoration: none;
+    
+}
+.headerLeft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.4rem 2rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.headerRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.4rem 2rem;
+    font-weight: 300;
+}
+.headerRight a{
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.headerRight a:hover{
+    color: #ffa026;
+}
+
+.headerLeft a{
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.headerLeft div:hover , .headerLeft a:hover{
+    color: #ffa026;
+}
+.headerLeft div{
+    padding: 0 0.5rem;
+}
+.headerRight i{
+    padding: 0 0.5rem;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+/* nav bar */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    border-bottom: solid 3px #e18c1c;
+    width: 100%;
+}
+
+.navRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;  /* tobechanged */
+    transition: 0.3s;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.navRight a
+{
+    text-decoration: none;
+    color:white;
+    padding: 10px;
+    font-weight: 800;
+    transition: 0.1s;
+
+}
+.navLeft{
+    display: flex;
+    flex-direction: row;
+}
+.navLeft img{
+    width: 100%;
+    height: 100%;
+}
+.navRight a:hover{
+    color: #ffa026;
+    cursor :pointer;
+}
+.navRight button{
+    background-color: #ffa026;
+    border-radius: 15px;
+    font-size: 1rem;
+    margin: 0.5rem 0 0.5rem;
+    color: white;
+    border: #ffa026;
+    padding: 0 1rem;
+    font-weight: bold;
+    
+}
+.navRight button a{
+    color: white;
+    font-size: 1.2em;
+}
+.navRight button a:hover{
+    color: white;
+}
+.topmenu{
+    display: none;
+}
+.mainmenu{
+    display: none;
+}
+.navRight button:hover{
+    background-color: #e18c1c;
+}
+
+/* drop */
+.dropbtn {
+    color: white;
+    padding: 16px;
+    border: none;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    transition: 1s;
+  }
+  .dropbtn:hover{
+    align-items: center;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    text-transform: capitalize;
+    position: absolute;
+    font-family: 'Playfair Display', serif;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: 0.3s;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 8px 2px 8px 5px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-content a:hover .dropbtn{align-items: center;}
+  .dropdown:hover .dropdown-content {
+    display: block;
+    width: 150px;
+    position: relative;
+    top: 0px;
+    left: -20px;
+}
+.dropdown:hover{
+    width: 100px;
+}
+
+
+@media screen and (max-width: 950px){
+    .header{
+        gap: 90%;
+    }
+    .headerLeft{
+        font-size: 50%;
+    }
+    .navLeft img{
+        width: 50%;
+    }
+    .navRight{
+        display: none;
+        align-items: center;
+    }
+    .topmenu{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+        gap: 10px;
+    }
+    .topmenu i{ 
+        font-size: 120%;
+    }
+    .topmenu h2{
+        padding: 0 0 5px 0;
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .headerLeft,.headerRight{
+        display: none;
+    }
+    .mainmenu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .mainmenu i{
+        color: white;
+    }
+    .mainmenu h2{
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+        color: white;
+    }
+    .slidemenu{
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s ease-in-out;
+        position: fixed;
+        z-index: 500;
+        right: 0px;
+        top: -500px;
+        background-color: white;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .slidemenucontent{
+        display: flex;
+        flex-direction: column;
+    }
+    .slidemenucontent a{
+        text-decoration: none;
+        color: black;
+    }
+    .slidemenucontent a:active{
+        color: black;
+    }
+    .slidemenucontent button{
+        width: 40%;
+        align-self: center;
+        border-radius: 10px;
+        color: white;
+    }
+    .slidedowncont{
+        display: none;
+        flex-direction: column;
+        transition: all 0.5s ease-in-out;
+        padding-left: 10% ;
+    }
+    .slidemenuevents{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .slidemenu i,.slidemenu2 i{
+        color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .slidemenu2{
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s ease-in-out;
+        position: fixed;
+        z-index: 500;
+        left: 100%;
+        background-color: #F7F7F7;
+        padding: 30px 10px;
+        width: 60%;
+        height: 100%;
+        top: 0px;
+    }
+    .slidemenu2 button{
+        width: 80%;
+        border-radius: 10px;
+        align-self: center;
+    }
+    .topmenusocialicons{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px 0;
+        width: 100%;
+        justify-content: center;
+        gap: 10%;
+    }
+    .topmenusocialicons i{
+        width: 25%;
+        font-size: 200%;
+    }
+    .topmenucontact{
+        background-color: white;
+        padding: 10px 3px;
+        border-radius: 10px;
+    }
+    #headerPhone,#headerLoc,#headerMail{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        background-color: white;
+        border-radius: 10px;
+    }
+    #headerPhone a,#headerLoc a,#headerMail a{
+        color: black;
+        text-decoration: none;
+    }
+    .categories{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 10px;
+        gap: 10px;
+        padding: 10px 0;
+    }
+}
+@media screen and (min-width: 768px) {
+    .navLeft img {
+        width: 100%;
+    }
+    .navLeft a{
+        width: 40%;
+    }
+
+    .navLeft {
+        width: 20%;
+    }
+
+    .navRight{
+        min-width: 60%;
+    }
+} 

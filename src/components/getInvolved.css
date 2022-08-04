@@ -1,0 +1,102 @@
+.getInvolved{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+.getInvolved h3{
+    color: #ffa026;
+    margin-bottom: 2%;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.5rem;
+}
+.getInvolved h1{
+    font-weight: bolder;
+    margin-bottom: 2%;
+    
+}
+.involvedDonate p{
+    height: 60%;
+}
+.involved{
+    display: flex;
+    flex-direction: row;
+    align-content:center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.involved div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:4rem;
+    border: solid 1px #ffa026;
+    padding: 1rem;
+    /* margin: 2rem; */
+    align-items: center;
+    border-radius: 14px;
+    max-width: 22%;
+    max-height: 80%;
+    background-color:white;
+    transition: 0.5s;
+}
+.involved div:hover{
+    -webkit-box-shadow: -1px 1px 11px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 1px 11px -2px rgba(0,0,0,0.75);
+box-shadow: -1px 1px 11px -2px rgba(0,0,0,0.75)
+}
+.involved i{
+    margin-top: 1rem;
+    color: #ffa026;
+    font-size: 200%;
+
+}
+.involved h3{
+    color: black;
+    font-size: 200%;
+}
+.involved div p{
+    text-align: center;
+    color: #383838;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    padding: 0 0.7rem;
+    margin-bottom: 2rem;
+    
+} 
+.involved button{
+    border-radius: 20px;
+    background-color: #ffa026;
+    color: white;
+    border: solid 1px #f9aa44;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 130%;
+}
+.involved button:hover{
+    background-color: #e18c1c;
+}
+@media screen and (max-width: 850px) {
+    .involved{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .involved div{
+        max-width: 80%;
+    }
+    .involved h3{
+        color: black;
+        font-size: 140%;
+    }
+    .getInvolved h1{
+        font-size: 150%;
+    }
+}

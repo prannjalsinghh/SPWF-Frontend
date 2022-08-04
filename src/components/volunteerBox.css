@@ -1,0 +1,89 @@
+.volunteerBox{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    justify-content: center;
+    gap: 10%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.volunteerBoxLeft{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.volunteerBoxLeft h4{
+    color: orange;
+}
+.volunteerBoxLeft h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+}
+.volunteerBoxRight{
+    display: flex;
+    width: 30%;
+    border-radius: 10px;
+    flex-direction: column;
+    border: solid 1px black;
+    padding: 1% 2%;
+    margin: 0%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/Picture16.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.volunteerBoxRight input{
+    padding: 10px 5px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.786);
+}
+.volrow{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+.VolunteerType{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.786);
+    border-radius: 10px;
+}
+.VolunteerType div input{
+    width: 20%;
+}
+
+.volunteerBoxRight button{
+    width: 80px;
+    padding: 5px 5px;
+    font-size: 120%;
+}
+.volunteerBoxRight button:hover{
+    background-color: #e18c1c;
+    border: 2px solid #e18c1c;
+}
+@media screen and (max-width: 1000px){
+    .volunteerBoxRight{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .volunteerBox{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .volunteerBoxLeft{
+        width: 80%;
+    }
+    .volunteerBoxRight{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .volunteerBoxRight{
+        width: 80%;
+    }
+}

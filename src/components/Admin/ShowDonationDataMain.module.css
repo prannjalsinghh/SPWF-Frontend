@@ -1,0 +1,12 @@
+table{
+   table-layout: fixed;
+    width: 100%;   
+}
+
+th,td{
+   
+    word-wrap: break-word;
+}
+td{
+    padding-top: 20px;
+}

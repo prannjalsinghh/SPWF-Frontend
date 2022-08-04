@@ -1,0 +1,134 @@
+.goalbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0 15%;
+    gap: 10px;
+    max-width: 2500px;
+    margin: 7% auto 7% auto;
+}
+.changinggoals{
+    display: flex;
+    flex-direction: row;
+    min-height: 210px;
+}
+
+.goalboxleft{
+    position: relative;
+    left: 5%;
+    bottom: 20px;
+    width: 40%;
+    background-color: #ffa026;
+    border-radius: 10px;
+    padding: 10px;
+}
+.goalboxleft h2,h3{
+    font-family: 'Playfair Display', serif;
+}
+.innergoalboxleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: solid 1px white;
+    border-radius: 10px;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+
+.goalboxright{
+    width: 60%;
+    background: url('../img/goalboxpic2.jpg');
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:60%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end; */
+}
+.changinggoals h4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+.changinggoals ul li:before {
+    content: 'o  ';
+    color: black;
+    font-weight: bolder;
+}
+.goalboxright i{
+    position: relative;
+    top: 80%;
+    left: 8%;
+    font-size: 300%;
+    background-color: #FFA026;
+    border-radius: 100px;
+    padding: 1px 0 0 0;
+    border: solid 1px #FFA026;
+    transition: 0.3s;
+
+}
+.goalboxright i:hover{
+    color: #FFA026;
+    background-color: aliceblue;
+    border: solid 1px #FFA026;
+
+}
+@media screen and (max-width: 1050px){
+    .goalbox{
+        padding: 0 10%;
+    }
+    .goalboxleft{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 850px){
+    .goalbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .goalboxleft{
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+    .innergoalboxleft{
+        max-height: 500px;
+        align-items: center;
+    }
+    .changinggoals{
+        justify-content: space-between;
+        width: 80%;
+    }
+    .goalboxright{
+        height: 500px;
+        width: 100%;
+        background-size:initial;
+        background-position:75%;
+    }
+    .goalboxright i{
+        left: 45%;
+        top: 50%;
+    font-size: 600%;
+
+    }
+}
+@media screen and (max-width: 450px){
+    .goalbox{
+        padding: 0;
+    }
+    .goalboxleft{
+        width: 90%;
+    }
+    .goalboxright{
+        width: 90%;
+    }
+}

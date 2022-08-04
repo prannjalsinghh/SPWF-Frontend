@@ -1,0 +1,14 @@
+.shikleft{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+ 
+
+}
+.shikleft h1{
+    font-family: 'Lobster', cursive;
+}
+.shikleft img{
+    border-radius: 10px;
+}
